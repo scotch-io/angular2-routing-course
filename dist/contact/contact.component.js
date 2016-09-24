@@ -9,19 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.message = 'This is the sample message.';
+var ContactComponent = (function () {
+    function ContactComponent() {
     }
-    AppComponent = __decorate([
+    ContactComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            styles: ["\n    \n  "],
-            template: "\n    <header>\n      <nav class=\"navbar navbar-inverse\">\n      <div class=\"container-fluid\">\n\n        <div class=\"navbar-header\">\n          <a href=\"#\" class=\"navbar-brand\">My Routing App</a>\n        </div>\n\n        <ul class=\"nav navbar-nav\">\n          <li><a href=\"#\">Home</a></li>\n          <li><a href=\"#\">About</a></li>\n          <li><a href=\"#\">Contact</a></li>\n        </ul>\n\n      </div>\n      </nav>\n    </header>\n\n    <main>\n\n      <router-outlet></router-outlet>\n\n    </main>\n  "
+            selector: 'contact-page',
+            template: "\n    i am the contact page\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ContactComponent);
+    return ContactComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ContactComponent = ContactComponent;
+//# sourceMappingURL=contact.component.js.map
