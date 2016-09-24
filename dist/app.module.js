@@ -16,6 +16,7 @@ var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var about_component_1 = require('./about/about.component');
 var contact_component_1 = require('./contact/contact.component');
+var not_found_component_1 = require('./not-found/not-found.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,7 +31,8 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
                 about_component_1.AboutComponent,
-                contact_component_1.ContactComponent
+                contact_component_1.ContactComponent,
+                not_found_component_1.NotFoundComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
