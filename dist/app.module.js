@@ -11,14 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
+var about_module_1 = require('./about/about.module');
 var app_routing_1 = require('./app.routing');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
-var about_component_1 = require('./about/about.component');
-var about_user_component_1 = require('./about/about-user.component');
 var contact_component_1 = require('./contact/contact.component');
 var not_found_component_1 = require('./not-found/not-found.component');
-var user_service_1 = require('./shared/services/user.service');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,19 +25,16 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
+                about_module_1.AboutModule,
                 app_routing_1.appRouting
             ],
             declarations: [
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
-                about_component_1.AboutComponent,
-                about_user_component_1.AboutUserComponent,
                 contact_component_1.ContactComponent,
                 not_found_component_1.NotFoundComponent
             ],
-            providers: [
-                user_service_1.UserService
-            ],
+            providers: [],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
