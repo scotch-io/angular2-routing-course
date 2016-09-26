@@ -5,7 +5,7 @@ var about_user_component_1 = require('./about-user.component');
 var about_section_component_1 = require('./about-section.component');
 var aboutRoutes = [
     {
-        path: 'about',
+        path: '',
         component: about_section_component_1.AboutSectionComponent,
         children: [
             {
