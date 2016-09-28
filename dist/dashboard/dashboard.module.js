@@ -15,6 +15,7 @@ var dashboard_routing_1 = require('./dashboard.routing');
 var dashboard_users_component_1 = require('./users/dashboard-users.component');
 var dashboard_users_home_component_1 = require('./users/dashboard-users-home.component');
 var dashboard_user_details_component_1 = require('./users/dashboard-user-details.component');
+var user_service_1 = require('../shared/services/user.service');
 var DashboardModule = (function () {
     function DashboardModule() {
     }
@@ -30,7 +31,9 @@ var DashboardModule = (function () {
                 dashboard_users_home_component_1.DashboardUsersHomeComponent,
                 dashboard_user_details_component_1.DashboardUserDetailsComponent
             ],
-            providers: []
+            providers: [
+                user_service_1.UserService
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], DashboardModule);
