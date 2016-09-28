@@ -35,6 +35,14 @@ var DashboardUserDetailsComponent = (function () {
     DashboardUserDetailsComponent.prototype.cancel = function () {
         this.router.navigate(['/dashboard/users']);
     };
+    DashboardUserDetailsComponent.prototype.canDeactivate = function () {
+        console.log('i am navigating away');
+        // if the editName !== this.user.name
+        if (this.user.name !== this.editName) {
+            return window.confirm('Discard changes?');
+        }
+        return true;
+    };
     DashboardUserDetailsComponent = __decorate([
         core_1.Component({
             template: "\n    <div class=\"jumbotron\">\n\n      <div *ngIf=\"user\">\n        <h2>{{ user.name }}</h2>\n\n        <div class=\"form-group\">\n          <input type=\"text\" [(ngModel)]=\"editName\" class=\"form-control\">\n        </div>\n\n        <div class=\"form-group text-center\">\n          <button (click)=\"cancel()\" class=\"btn btn-danger\">Cancel</button>\n          <button (click)=\"save()\" class=\"btn btn-success\">Save</button>\n        </div>\n      </div>\n\n    </div>\n  "

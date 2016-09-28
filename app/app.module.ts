@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthGuard } from './shared/guards/auth-guard.service';
+import { CanDeactivateGuard } from './shared/guards/can-deactivate-guard.service';
 
 @NgModule({
   imports: [ 
@@ -23,7 +24,8 @@ import { AuthGuard } from './shared/guards/auth-guard.service';
     NotFoundComponent
   ],
   providers: [
-    AuthGuard
+    AuthGuard,
+    CanDeactivateGuard
   ],
   bootstrap: [ AppComponent ]
 })
