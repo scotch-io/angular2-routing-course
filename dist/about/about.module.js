@@ -15,6 +15,7 @@ var about_user_component_1 = require('./about-user.component');
 var about_section_component_1 = require('./about-section.component');
 var user_service_1 = require('../shared/services/user.service');
 var about_routing_1 = require('./about.routing');
+var about_resolve_service_1 = require('./about-resolve.service');
 var AboutModule = (function () {
     function AboutModule() {
     }
@@ -30,7 +31,8 @@ var AboutModule = (function () {
                 about_section_component_1.AboutSectionComponent
             ],
             providers: [
-                user_service_1.UserService
+                user_service_1.UserService,
+                about_resolve_service_1.AboutUsersResolve
             ]
         }), 
         __metadata('design:paramtypes', [])
