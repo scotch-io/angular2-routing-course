@@ -17,6 +17,7 @@ var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var contact_component_1 = require('./contact/contact.component');
 var not_found_component_1 = require('./not-found/not-found.component');
+var auth_guard_service_1 = require('./shared/guards/auth-guard.service');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -34,7 +35,9 @@ var AppModule = (function () {
                 contact_component_1.ContactComponent,
                 not_found_component_1.NotFoundComponent
             ],
-            providers: [],
+            providers: [
+                auth_guard_service_1.AuthGuard
+            ],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
