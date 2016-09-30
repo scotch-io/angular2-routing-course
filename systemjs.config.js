@@ -45,6 +45,7 @@
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
+      baseURL: '/angular2-routing-course/',
       app: {
         main: './main.ts',
         defaultExtension: 'ts'
