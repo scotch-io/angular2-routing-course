@@ -47,7 +47,7 @@
     packages: {
       baseURL: '/angular2-routing-course/',
       app: {
-        main: './main.ts',
+        main: 'main.ts',
         defaultExtension: 'ts'
       },
       rxjs: {
