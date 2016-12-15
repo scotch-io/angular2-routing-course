@@ -6,7 +6,7 @@ const usersPromise: Promise<User[]> = Promise.resolve([
     id: 1,
     name: 'Chris',
     username: 'sevilayha',
-    avatar: 'https://pbs.twimg.com/profile_images/422816823302561793/Hg3LD8K7_400x400.jpeg'
+    avatar: 'https://pbs.twimg.com/profile_images/804421640465580032/aG7EyewO_400x400.jpg'
   },
   {
     id: 2,
